@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		571D16A626EA0F1700010A15 /* SendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571D16A526EA0F1700010A15 /* SendViewController.swift */; };
+		571D16A826EA0F2900010A15 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571D16A726EA0F2900010A15 /* DetailViewController.swift */; };
 		5722476826E9936F002F5648 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5722476726E9936F002F5648 /* AppDelegate.swift */; };
 		5722476A26E9936F002F5648 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5722476926E9936F002F5648 /* SceneDelegate.swift */; };
 		5722476C26E9936F002F5648 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5722476B26E9936F002F5648 /* ViewController.swift */; };
 		5722476F26E9936F002F5648 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5722476D26E9936F002F5648 /* Main.storyboard */; };
 		5722477126E99370002F5648 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5722477026E99370002F5648 /* Assets.xcassets */; };
 		5722477426E99370002F5648 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5722477226E99370002F5648 /* LaunchScreen.storyboard */; };
+		57A812F226EA5958003A4C3D /* NotificationCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A812F126EA5958003A4C3D /* NotificationCenterViewController.swift */; };
+		57A812F526EF857A003A4C3D /* ChooseFruitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A812F426EF857A003A4C3D /* ChooseFruitViewController.swift */; };
+		57A812F926EF86B7003A4C3D /* DisplayFruitsTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A812F826EF86B7003A4C3D /* DisplayFruitsTableController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		571D16A526EA0F1700010A15 /* SendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendViewController.swift; sourceTree = "<group>"; };
+		571D16A726EA0F2900010A15 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		5722476426E9936F002F5648 /* client-server-1436.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "client-server-1436.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5722476726E9936F002F5648 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5722476926E9936F002F5648 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,9 @@
 		5722477026E99370002F5648 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5722477326E99370002F5648 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5722477526E99370002F5648 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57A812F126EA5958003A4C3D /* NotificationCenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCenterViewController.swift; sourceTree = "<group>"; };
+		57A812F426EF857A003A4C3D /* ChooseFruitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseFruitViewController.swift; sourceTree = "<group>"; };
+		57A812F826EF86B7003A4C3D /* DisplayFruitsTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayFruitsTableController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +47,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		571D16A226E995AB00010A15 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				5722476926E9936F002F5648 /* SceneDelegate.swift */,
+				5722476726E9936F002F5648 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		571D16A326E995D500010A15 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5722476D26E9936F002F5648 /* Main.storyboard */,
+				5722477026E99370002F5648 /* Assets.xcassets */,
+				5722477226E99370002F5648 /* LaunchScreen.storyboard */,
+				5722477526E99370002F5648 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		571D16A426E998A000010A15 /* lesson-1 */ = {
+			isa = PBXGroup;
+			children = (
+				57A812F326EF8468003A4C3D /* Delegate */,
+				57A812F026EA5894003A4C3D /* NotificationCenter */,
+				57A812EF26EA5889003A4C3D /* Singleton */,
+			);
+			path = "lesson-1";
+			sourceTree = "<group>";
+		};
 		5722475B26E9936F002F5648 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +96,38 @@
 		5722476626E9936F002F5648 /* client-server-1436 */ = {
 			isa = PBXGroup;
 			children = (
-				5722476726E9936F002F5648 /* AppDelegate.swift */,
-				5722476926E9936F002F5648 /* SceneDelegate.swift */,
 				5722476B26E9936F002F5648 /* ViewController.swift */,
-				5722476D26E9936F002F5648 /* Main.storyboard */,
-				5722477026E99370002F5648 /* Assets.xcassets */,
-				5722477226E99370002F5648 /* LaunchScreen.storyboard */,
-				5722477526E99370002F5648 /* Info.plist */,
+				571D16A226E995AB00010A15 /* App */,
+				571D16A426E998A000010A15 /* lesson-1 */,
+				571D16A326E995D500010A15 /* Resources */,
 			);
 			path = "client-server-1436";
+			sourceTree = "<group>";
+		};
+		57A812EF26EA5889003A4C3D /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				571D16A526EA0F1700010A15 /* SendViewController.swift */,
+				571D16A726EA0F2900010A15 /* DetailViewController.swift */,
+			);
+			path = Singleton;
+			sourceTree = "<group>";
+		};
+		57A812F026EA5894003A4C3D /* NotificationCenter */ = {
+			isa = PBXGroup;
+			children = (
+				57A812F126EA5958003A4C3D /* NotificationCenterViewController.swift */,
+			);
+			path = NotificationCenter;
+			sourceTree = "<group>";
+		};
+		57A812F326EF8468003A4C3D /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				57A812F426EF857A003A4C3D /* ChooseFruitViewController.swift */,
+				57A812F826EF86B7003A4C3D /* DisplayFruitsTableController.swift */,
+			);
+			path = Delegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +200,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57A812F226EA5958003A4C3D /* NotificationCenterViewController.swift in Sources */,
+				57A812F526EF857A003A4C3D /* ChooseFruitViewController.swift in Sources */,
+				57A812F926EF86B7003A4C3D /* DisplayFruitsTableController.swift in Sources */,
+				571D16A626EA0F1700010A15 /* SendViewController.swift in Sources */,
 				5722476C26E9936F002F5648 /* ViewController.swift in Sources */,
+				571D16A826EA0F2900010A15 /* DetailViewController.swift in Sources */,
 				5722476826E9936F002F5648 /* AppDelegate.swift in Sources */,
 				5722476A26E9936F002F5648 /* SceneDelegate.swift in Sources */,
 			);
@@ -288,7 +356,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BG5UDAJYTJ;
-				INFOPLIST_FILE = "client-server-1436/Info.plist";
+				INFOPLIST_FILE = "client-server-1436/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +375,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BG5UDAJYTJ;
-				INFOPLIST_FILE = "client-server-1436/Info.plist";
+				INFOPLIST_FILE = "client-server-1436/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
