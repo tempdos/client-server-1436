@@ -194,20 +194,39 @@
             </objects>
             <point key="canvasLocation" x="34.782608695652179" y="93.75"/>
         </scene>
-        <!--Networking View Controller-->
+        <!--Auth View Controller-->
         <scene sceneID="omW-Zc-s3s">
             <objects>
-                <viewController id="UrQ-9e-6i9" customClass="NetworkingViewController" customModule="client_server_1436" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="UrQ-9e-6i9" customClass="AuthViewController" customModule="client_server_1436" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JqC-oM-5Sc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c5m-bJ-w08">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Bqr-mL-E3T"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="c5m-bJ-w08" firstAttribute="top" secondItem="Bqr-mL-E3T" secondAttribute="top" id="YJk-i3-XnH"/>
+                            <constraint firstItem="Bqr-mL-E3T" firstAttribute="bottom" secondItem="c5m-bJ-w08" secondAttribute="bottom" id="cYR-Bt-TPl"/>
+                            <constraint firstItem="Bqr-mL-E3T" firstAttribute="trailing" secondItem="c5m-bJ-w08" secondAttribute="trailing" id="j0l-TJ-16d"/>
+                            <constraint firstItem="c5m-bJ-w08" firstAttribute="leading" secondItem="Bqr-mL-E3T" secondAttribute="leading" id="z4z-zr-bMy"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="webView" destination="c5m-bJ-w08" id="mCq-pD-uA1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vX0-me-Beo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-775" y="-1357"/>
+            <point key="canvasLocation" x="-775" y="-1398"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="IKc-mt-7Zx">

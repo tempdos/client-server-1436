@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5700F34026FD63AF007281DC /* FriendsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5700F33F26FD63AF007281DC /* FriendsAPI.swift */; };
 		571D16A626EA0F1700010A15 /* SendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571D16A526EA0F1700010A15 /* SendViewController.swift */; };
 		571D16A826EA0F2900010A15 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571D16A726EA0F2900010A15 /* DetailViewController.swift */; };
 		5722476826E9936F002F5648 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5722476726E9936F002F5648 /* AppDelegate.swift */; };
@@ -19,12 +20,16 @@
 		57A812F526EF857A003A4C3D /* ChooseFruitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A812F426EF857A003A4C3D /* ChooseFruitViewController.swift */; };
 		57A812F926EF86B7003A4C3D /* DisplayFruitsTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A812F826EF86B7003A4C3D /* DisplayFruitsTableController.swift */; };
 		57A812FC26F02DBE003A4C3D /* NetworkingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A812FB26F02DBE003A4C3D /* NetworkingViewController.swift */; };
+		57F368CB26F1BE0C00B19CD5 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F368CA26F1BE0C00B19CD5 /* Session.swift */; };
+		57F368D026F1BE9700B19CD5 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F368CF26F1BE9700B19CD5 /* AuthViewController.swift */; };
+		57F368D226F1BEBA00B19CD5 /* DisplayFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F368D126F1BEBA00B19CD5 /* DisplayFriendsViewController.swift */; };
 		F800FCFC3DF12C6E4250902F /* Pods_client_server_1436.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C26B5E2FCB91A942AA907C /* Pods_client_server_1436.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1E2D7F9457AF275862C67A1E /* Pods-client-server-1436.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-client-server-1436.release.xcconfig"; path = "Target Support Files/Pods-client-server-1436/Pods-client-server-1436.release.xcconfig"; sourceTree = "<group>"; };
 		51C26B5E2FCB91A942AA907C /* Pods_client_server_1436.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_client_server_1436.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5700F33F26FD63AF007281DC /* FriendsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsAPI.swift; sourceTree = "<group>"; };
 		571D16A526EA0F1700010A15 /* SendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendViewController.swift; sourceTree = "<group>"; };
 		571D16A726EA0F2900010A15 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		5722476426E9936F002F5648 /* client-server-1436.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "client-server-1436.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,6 +44,9 @@
 		57A812F426EF857A003A4C3D /* ChooseFruitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseFruitViewController.swift; sourceTree = "<group>"; };
 		57A812F826EF86B7003A4C3D /* DisplayFruitsTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayFruitsTableController.swift; sourceTree = "<group>"; };
 		57A812FB26F02DBE003A4C3D /* NetworkingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingViewController.swift; sourceTree = "<group>"; };
+		57F368CA26F1BE0C00B19CD5 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		57F368CF26F1BE9700B19CD5 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		57F368D126F1BEBA00B19CD5 /* DisplayFriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayFriendsViewController.swift; sourceTree = "<group>"; };
 		ED265072B355C2D0A251C57A /* Pods-client-server-1436.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-client-server-1436.debug.xcconfig"; path = "Target Support Files/Pods-client-server-1436/Pods-client-server-1436.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -169,8 +177,44 @@
 		57F368C826F1BB8500B19CD5 /* vk-api */ = {
 			isa = PBXGroup;
 			children = (
+				57F368CC26F1BE5F00B19CD5 /* Module */,
+				57F368C926F1BC0500B19CD5 /* Service */,
 			);
 			path = "vk-api";
+			sourceTree = "<group>";
+		};
+		57F368C926F1BC0500B19CD5 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				57F368CA26F1BE0C00B19CD5 /* Session.swift */,
+				5700F33F26FD63AF007281DC /* FriendsAPI.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		57F368CC26F1BE5F00B19CD5 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				57F368CE26F1BE7300B19CD5 /* Display Friends */,
+				57F368CD26F1BE6E00B19CD5 /* Auth */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		57F368CD26F1BE6E00B19CD5 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				57F368CF26F1BE9700B19CD5 /* AuthViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		57F368CE26F1BE7300B19CD5 /* Display Friends */ = {
+			isa = PBXGroup;
+			children = (
+				57F368D126F1BEBA00B19CD5 /* DisplayFriendsViewController.swift */,
+			);
+			path = "Display Friends";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,6 +331,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57F368D026F1BE9700B19CD5 /* AuthViewController.swift in Sources */,
+				57F368CB26F1BE0C00B19CD5 /* Session.swift in Sources */,
 				57A812F226EA5958003A4C3D /* NotificationCenterViewController.swift in Sources */,
 				57A812F526EF857A003A4C3D /* ChooseFruitViewController.swift in Sources */,
 				57A812FC26F02DBE003A4C3D /* NetworkingViewController.swift in Sources */,
@@ -294,8 +340,10 @@
 				571D16A626EA0F1700010A15 /* SendViewController.swift in Sources */,
 				5722476C26E9936F002F5648 /* ViewController.swift in Sources */,
 				571D16A826EA0F2900010A15 /* DetailViewController.swift in Sources */,
+				57F368D226F1BEBA00B19CD5 /* DisplayFriendsViewController.swift in Sources */,
 				5722476826E9936F002F5648 /* AppDelegate.swift in Sources */,
 				5722476A26E9936F002F5648 /* SceneDelegate.swift in Sources */,
+				5700F34026FD63AF007281DC /* FriendsAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
